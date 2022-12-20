@@ -17,6 +17,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --color-theme-btn: #454e56;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
@@ -33,6 +34,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
+  --color-theme-btn: #F56692;
 }
 
 body {
@@ -130,7 +132,7 @@ section {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-theme-btn);
   cursor: pointer;
   position: fixed;
   display: flex;
@@ -145,19 +147,13 @@ section {
 /* scroll */
 #bd_scr::-webkit-scrollbar {
   width: 10px;
-  background-color: #f9f9fd;
+  background-color: var(--color-primary);
 }
 
 #bd_scr::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background-color: #27AE60;
+  background-color: var(--color-secondary);
 }
-
-/* #bd_scr::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-  border-radius: 0;
-  background-color: #f9f9fd;
-} */
 
 /*Header-content*/
 .header-content {
@@ -362,58 +358,6 @@ section {
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
-
-/*Timeline*/
-/* .timeline {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  padding-bottom: 3rem;
-}
-.timeline .timeline-item {
-  position: relative;
-  padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-5);
-}
-.timeline .timeline-item .tl-icon {
-  position: absolute;
-  left: -27px;
-  top: 0;
-  background-color: var(--color-secondary);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.timeline .timeline-item .tl-icon i {
-  font-size: 1.3rem;
-}
-.timeline .timeline-item .tl-duration {
-  padding: 0.2rem 0.6rem;
-  background-color: var(--color-grey-5);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.timeline .timeline-item h5 {
-  padding: 1rem 0;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-.timeline .timeline-item h5 span {
-  color: var(--color-grey-2);
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-.timeline .timeline-item p {
-  color: var(--color-grey-2);
-} */
-
 
 /* portfolio */
 .port-text {
